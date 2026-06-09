@@ -265,7 +265,7 @@ ul { list-style: none; }
 .hero-br { display: none; }
 
 .hero-area-mobile {
-  display: none;
+  display: none !important;
 }
 
 /* Right column: Georgia map + AREA label */
@@ -741,11 +741,11 @@ footer {
   .hero-eyebrow { margin-left: 0; font-size: 26px; color: rgba(255,255,255,0.75); }
   .hero-title { font-size: 52px; white-space: normal; color: var(--white); }
   .hero-desc { color: rgba(255,255,255,0.75); font-size: 13px; }
-  .hero-map-col { display: none; }
+  .hero-map-col { display: none !important; }
   .hero-br { display: none; }
   .btn-hero { align-self: center; }
   .hero-area-mobile {
-    display: block;
+    display: block !important;
     color: var(--white);
     font-size: 32px;
     font-weight: 800;
