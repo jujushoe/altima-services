@@ -262,6 +262,12 @@ ul { list-style: none; }
   background: var(--yellow-hover);
 }
 
+.hero-br { display: none; }
+
+.hero-area-mobile {
+  display: none;
+}
+
 /* Right column: Georgia map + AREA label */
 .hero-map-col {
   position: absolute;
@@ -728,11 +734,26 @@ footer {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .contact-body-grid { grid-template-columns: 1fr; gap: 48px; }
   .cta-grid { grid-template-columns: 1fr; gap: 44px; }
-  .hero-inner { flex-direction: column; align-items: center; min-height: unset; }
-  .hero-text { padding: 40px 0 20px; text-align: center; align-items: center; }
-  .hero-title { font-size: 40px; white-space: normal; text-align: center; }
-  .hero-map-col { flex: none; width: 240px; height: 270px; }
-  .hero-area { font-size: 36px; top: 65%; left: -10px; }
+  .hero { min-height: unset; }
+  .hero::before { display: none; }
+  .hero-inner { flex-direction: column; align-items: center; min-height: unset; padding: 0 28px; }
+  .hero-text { flex: none; width: 100%; margin-left: 0; max-width: none; padding: 48px 0 52px; text-align: center; align-items: center; }
+  .hero-eyebrow { margin-left: 0; font-size: 26px; color: rgba(255,255,255,0.75); }
+  .hero-title { font-size: 52px; white-space: normal; color: var(--white); }
+  .hero-desc { color: rgba(255,255,255,0.75); font-size: 13px; }
+  .hero-map-col { display: none; }
+  .hero-br { display: none; }
+  .btn-hero { align-self: center; }
+  .hero-area-mobile {
+    display: block;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -16px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -751,7 +772,7 @@ footer {
   }
   .preview-grid { grid-template-columns: 1fr 1fr; }
   .reviews-grid { grid-template-columns: 1fr; }
-  .hero-title { font-size: 34px; }
+  .hero-title { font-size: 48px; }
   .page-header h1 { font-size: 36px; }
   .cta-title { font-size: 28px; }
 }
