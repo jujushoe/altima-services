@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altima Services | Atlanta, Georgia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-top">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="brand_assets/AltimaLogo.svg" alt="Altima Services">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Servicing the</p>
+        <h1 class="hero-title">Atlanta, Georgia</h1>
+        <p class="hero-desc">Doing <strong>The Work</strong> to prepare your units for move-in</p>
+        <a href="contact.html" class="btn-hero">Contact Us</a>
+      </div>
+      <div class="hero-map-col">
+        <p class="hero-area">Area</p>
+        <img src="brand_assets/georgia.png" alt="Georgia state map" class="georgia-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR SERVICES (preview) ===== -->
+  <section class="services-preview">
+    <div class="container">
+      <h2 class="section-heading">Our Services</h2>
+      <div class="preview-grid">
+
+        <div class="preview-card">
+          <span class="preview-card-label">Painting</span>
+          <span class="preview-card-icon">
+            <i class="fas fa-paint-roller"></i>
+          </span>
+        </div>
+
+        <div class="preview-card">
+          <span class="preview-card-label">Repairs</span>
+          <span class="preview-card-icon">
+            <i class="fas fa-screwdriver-wrench"></i>
+          </span>
+        </div>
+
+        <div class="preview-card">
+          <span class="preview-card-label">Resurfacing</span>
+          <span class="preview-card-icon">
+            <i class="fas fa-bath"></i>
+          </span>
+        </div>
+
+        <div class="preview-card">
+          <span class="preview-card-label">Cleaning</span>
+          <span class="preview-card-icon">
+            <i class="fas fa-broom"></i>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-heading section-heading-dark">Read What Others Have To Say</h2>
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <p class="review-text">"Exceptional turnkey solutions! The team's professionalism and efficiency exceeded my expectations."</p>
+          <p class="review-company">Piedmont Property</p>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"So professional, efficient, and thorough, and at a fair price! Always a pleasure to work with."</p>
+          <p class="review-company">Forest Meadow Apts</p>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"Efficiency at its best! The services provided were not only top-notch but also delivered with a smile!"</p>
+          <p class="review-company">Magnolia Apartments</p>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"From concept to completion, Altima knows how to get things done. Professionalism, efficiency, and a fair price make them stand out."</p>
+          <p class="review-company">Dexter Lake Apartments</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / CONTACT FORM ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-grid">
+        <div class="cta-left">
+          <h2 class="cta-title">Ready to get<br>started?</h2>
+          <p class="cta-desc">Contact us to get "The Altima Service" and learn more! Request a quote or ask a question here.</p>
+        </div>
+        <form class="contact-form" action="mailto:altimapack@gmail.com" method="post" enctype="text/plain">
+          <input class="form-input" type="text" name="name" placeholder="Name" required>
+          <input class="form-input" type="email" name="email" placeholder="Email" required>
+          <textarea class="form-input form-textarea" name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <nav class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="footer-logo-wrap">
+        <img src="brand_assets/AltimaLogo.svg" alt="Altima Services">
+      </div>
+      <a href="#reviews">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <hr class="footer-divider">
+    <p class="footer-copy">© 2010 — 2020 &nbsp; <a href="#">Privacy</a> — <a href="#">Terms</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+
+</body>
+</html>

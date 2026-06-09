@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Altima Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-top">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="brand_assets/AltimaLogo.svg" alt="Altima Services">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER (dark) ===== -->
+  <header class="page-header page-header-dark">
+    <h1>Contact Us</h1>
+  </header>
+
+  <!-- ===== CONTACT BODY ===== -->
+  <section class="contact-body">
+    <div class="container">
+      <div class="contact-body-grid">
+
+        <div class="contact-info">
+          <h2 class="contact-info-heading">Email or fill out<br>the form to get<br>in touch.</h2>
+          <p class="contact-info-line"><strong>Email:</strong> <a href="mailto:altimapack@gmail.com">altimapack@gmail.com</a></p>
+          <p class="contact-info-line"><strong>Phone:</strong> 233-678-4327</p>
+        </div>
+
+        <form class="contact-form" action="mailto:altimapack@gmail.com" method="post" enctype="text/plain">
+          <input class="form-input" type="text" name="name" placeholder="Name" required>
+          <input class="form-input" type="email" name="email" placeholder="Email" required>
+          <textarea class="form-input form-textarea" name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <nav class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="footer-logo-wrap">
+        <img src="brand_assets/AltimaLogo.svg" alt="Altima Services">
+      </div>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <hr class="footer-divider">
+    <p class="footer-copy">© 2010 — 2020 &nbsp; <a href="#">Privacy</a> — <a href="#">Terms</a></p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+
+</body>
+</html>

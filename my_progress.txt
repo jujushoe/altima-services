@@ -1,0 +1,90 @@
+ALTIMA SERVICES WEBSITE — BUILD PROGRESS
+==========================================
+Date: 2026-05-25
+
+FILES CREATED
+-------------
+- index.html         Home page
+- services.html      Services page
+- about.html         About page
+- contact.html       Contact page
+- css/styles.css     Shared stylesheet
+- brand_assets/      AltimaLogo.svg, georgia.png (pre-existing)
+- figma_references/  Design reference PNGs (pre-existing)
+
+PAGES & SECTIONS
+----------------
+Home (index.html):
+  - Fixed white navbar with logo + nav links
+  - Hero: dark navy bg with light horizontal stripe, "Servicing the / Atlanta, Georgia / Area"
+    heading, Georgia state PNG map, pill-shaped Contact Us button
+  - Our Services: 4 preview cards (Painting, Repairs, Resurfacing, Cleaning) with FA icons
+  - Reviews: 4 testimonial quote cards (Piedmont Property, Forest Meadow Apts,
+    Magnolia Apartments, Dexter Lake Apartments)
+  - Ready to get started? CTA with contact form (Name, Email, Message, Send Message)
+  - Footer: nav links, centered logo, copyright
+
+Services (services.html):
+  - Same navbar + footer
+  - "Our Services" page header
+  - 4 detail cards with descriptions:
+      Repairs — doors, knobs, hinges, cabinets, sheet rock
+      Resurfacing — bathroom tubs/walls, vanity tops, kitchen counters
+      Painting — walls, doors, trims, baseboard
+      Cleaning — studios to individual bedrooms
+  - Before/After photo placeholders
+  - CTA contact form
+
+About (about.html):
+  - Same navbar + footer
+  - "About" page header
+  - Story text + photo placeholder
+  - "Providing The Altima Service" quote box
+  - CTA contact form
+
+Contact (contact.html):
+  - Same navbar + footer
+  - Dark navy header "Contact Us"
+  - Email: altimapack@gmail.com
+  - Phone: 233-678-4327
+  - Contact form
+
+DESIGN DETAILS
+--------------
+Colors:
+  Navy:   #0B2340
+  Yellow: #F5C113
+  Light band (hero): #ECEAE4
+
+Typography:
+  Font: Montserrat (Google Fonts), weights 400–900
+
+Hero section:
+  - min-height: 520px
+  - Light stripe: 56% height, vertically centered via ::before pseudo-element
+  - Georgia map: brand_assets/georgia.png, object-fit contain, centered
+  - "AREA" label: position absolute, top 48%, left -145px within hero-map-col
+
+Icons (Font Awesome 6):
+  - Painting:     fa-paint-roller
+  - Repairs:      fa-screwdriver-wrench
+  - Resurfacing:  fa-bath
+  - Cleaning:     fa-broom
+
+THINGS TO DO / REPLACE
+-----------------------
+- About page: replace "Photo coming soon" placeholder with real worker photo
+- Services page: replace Before/After photo placeholders with real photos
+- Footer social media icons: removed (can add back with real profile URLs)
+- Form action: currently uses mailto: — connect to a backend or form service (e.g. Formspree)
+  to actually receive submissions
+
+HOW TO PREVIEW
+--------------
+Option 1 (quick): Open index.html directly in browser
+  macOS: open /Users/judyshu/Altima/index.html
+
+Option 2 (recommended, loads all assets correctly):
+  cd /Users/judyshu/Altima
+  python3 -m http.server 8000
+  Then visit: http://localhost:8000
